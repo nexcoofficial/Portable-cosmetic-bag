@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Portable Cosmetic Bag Premium</title>
+  <meta name="description" content="Portable Cosmetic Bag Premium - Tas kosmetik elegan, praktis, dan universal. Pesan sekarang!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      background: #f7f7fa;
+      color: #222;
+    }
+    .premium-bg {
+      background: linear-gradient(135deg, #f8f6f3 60%, #e7dac6 100%);
+      padding-bottom: 32px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    header {
+      padding: 40px 0 24px 0;
+      text-align: center;
+    }
+    .headline {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #b4935a;
+      margin-bottom: 14px;
+      letter-spacing: 0.5px;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 24px;
+    }
+    .main-image {
+      box-shadow: 0 8px 30px 0 rgba(180,147,90,0.11), 0 1.5px 3px rgba(180,147,90,0.03);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 0 auto 28px auto;
+    }
+    .fitur-section, .keunggulan-section, .price-section {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 10px 0 rgba(180,147,90,0.07);
+      padding: 28px 20px 18px 20px;
+      margin: 28px 0 0 0;
+    }
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      color: #b4935a;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .fitur-list, .keunggulan-list {
+      margin: 0 0 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .fitur-list li, .keunggulan-list li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .fitur-list li::before, .keunggulan-list li::before {
+      content: "✅";
+      color: #4caf50;
+      font-size: 1.1rem;
+      margin-right: 8px;
+      margin-top: 2px;
+    }
+    .gallery-section {
+      margin: 32px 0 0 0;
+      text-align: center;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .gallery-grid img, .gallery-grid .gif-gallery {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      background: #f8f6f3;
+    }
+    .testimoni-section {
+      margin: 40px 0 0 0;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 10px 0 rgba(180,147,90,0.07);
+      padding: 28px 20px 18px 20px;
+    }
+    .testimoni-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      scroll-behavior: smooth;
+      padding-bottom: 6px;
+    }
+    .testimoni {
+      min-width: 220px;
+      background: #fbf7f2;
+      border-radius: 10px;
+      padding: 14px 16px;
+      box-shadow: 0 1.5px 8px rgba(180,147,90,0.06);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+    .testimoni-profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      gap: 10px;
+    }
+    .testimoni-profile img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #e9d7b6;
+    }
+    .testimoni-name {
+      font-weight: 500;
+      color: #a3824a;
+      font-size: 1rem;
+    }
+    .testimoni-msg {
+      font-size: 1.04rem;
+      color: #444;
+      margin-left: 4px;
+    }
+    .countdown-section {
+      text-align: center;
+      margin: 38px 0 0 0;
+    }
+    .countdown-timer {
+      font-size: 1.3rem;
+      background: #f4e5c2;
+      color: #b4935a;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-family: 'Montserrat', sans-serif;
+      display: inline-block;
+      margin: 0 auto;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+    }
+    .price-section {
+      text-align: center;
+      margin-top: 36px;
+      margin-bottom: 24px;
+    }
+    .old-price {
+      color: #b0a18e;
+      font-size: 1.1rem;
+      text-decoration: line-through;
+      margin-bottom: 6px;
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .price {
+      color: #b4935a;
+      font-size: 2.1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: linear-gradient(90deg,#b4935a 60%,#e7dac6 100%);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.15rem;
+      letter-spacing: 0.7px;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 14px 38px;
+      border: none;
+      text-decoration: none;
+      margin-top: 16px;
+      box-shadow: 0 4px 14px 0 rgba(180,147,90,0.12);
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .cta-btn:hover {
+      background: linear-gradient(90deg,#e7dac6 60%,#b4935a 100%);
+      color: #b4935a;
+      box-shadow: 0 6px 20px 0 rgba(180,147,90,0.16);
+    }
+    /* Social Proof */
+    .social-proof-popup {
+      position: fixed;
+      right: 20px;
+      bottom: 36px;
+      background: #fff8e6;
+      color: #594a25;
+      border-radius: 10px;
+      box-shadow: 0 2px 18px rgba(180,147,90,0.13);
+      padding: 12px 18px 12px 12px;
+      display: flex;
+      align-items: center;
+      z-index: 9999;
+      min-width: 270px;
+      max-width: 95vw;
+      font-size: 1rem;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(120%);
+      transition: opacity 0.4s, transform 0.4s;
+    }
+    .social-proof-popup.active {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateX(0);
+    }
+    .social-proof-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #e9d7b6;
+      margin-right: 13px;
+    }
+    .social-proof-msg {
+      flex: 1;
+      font-size: 1.02rem;
+      font-weight: 500;
+      color: #7a5e2c;
+    }
+    .social-proof-time {
+      font-size: 0.93rem;
+      color: #b0a18e;
+      margin-left: 10px;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0.2px;
+    }
+    @media (max-width: 600px) {
+      .headline { font-size: 1.5rem; }
+      .price { font-size: 1.4rem; }
+      .main-image { max-width: 96vw; }
+      .container { padding: 0 4px; }
+      .fitur-section, .keunggulan-section, .testimoni-section, .price-section {
+        padding: 18px 7px 8px 7px;
+      }
+      .testimoni { min-width: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="premium-bg">
+    <div class="container">
+      <header>
+        <div class="headline">✨ Portable Cosmetic Bag Premium</div>
+        <div class="subtitle">Tas kosmetik elegan, multifungsi, dan super praktis untuk semua kebutuhan.<br>Solusi stylish untuk perjalanan & aktivitas harian Anda!</div>
+        <img class="main-image" src="https://cdn.hotishop.com/image/b959cecf3f4c57ba14d17353df336183c36a97bf.jpeg" alt="Portable Cosmetic Bag Premium">
+      </header>
+
+      <section class="fitur-section">
+        <div class="section-title">Fitur Unggulan</div>
+        <ul class="fitur-list">
+          <li>Desain premium & elegan, cocok untuk pria & wanita</li>
+          <li>Kapasitas besar, muat banyak kosmetik & perlengkapan pribadi</li>
+          <li>Material waterproof, awet & mudah dibersihkan</li>
+          <li>Banyak sekat & kompartemen untuk barang tertata rapi</li>
+          <li>Ringan & portable, praktis dibawa ke mana saja</li>
+          <li>Resleting halus & kuat, anti macet</li>
+        </ul>
+      </section>
+
+      <section class="gallery-section">
+        <div class="section-title">Galeri Produk</div>
+        <div class="gallery-grid">
+          <img src="https://i.ebayimg.com/images/g/NT8AAOSwsd9mteLD/s-l1600.webp" alt="Galeri Cosmetic Bag">
+          <img src="https://cdn.hotishop.com/image/14aa5799c3ed629719d7a150b87477e30099e6a5.jpeg" alt="Galeri 2">
+          <img src="https://cdn.hotishop.com/image/b4c90926e97e4987933959f4536f5f2b1ecf513d.jpeg" alt="Galeri 3">
+          <img src="https://cdn.hotishop.com/image/56a8bea514fcf941824bb13b843d2de986cef1cb.jpeg" alt="Galeri 4">
+          <img src="https://cdn.hotishop.com/image/2fe49333067eed731ccec22803f1630b08fbc009-600.jpeg" alt="Galeri 5">
+          <img src="https://cdn.hotishop.com/image/0ad1a09d413e5009d11e74d7e75770ab41ff0dc0-600.jpeg" alt="Galeri 6">
+          <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/859232d5-68d0-46af-aaed-06610b48e559.__CR0,0,970,600_PT0_SX970_V1___.jpg" alt="Galeri 7">
+          <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/57a0dbfc-214b-443a-8e3b-20c212f9421f.__CR0,0,970,600_PT0_SX970_V1___.jpg" alt="Galeri 8">
+        </div>
+        <div><img src="https://cdn.hotishop.com/image/914aec4510485694fd5b8079f6de8deef513d459.gif" width="98%" class="gif-gallery" alt="Model Gallery"></div>
+      </section>
+
+      <section class="keunggulan-section">
+        <div class="section-title">Kenapa Harus Punya?</div>
+        <ul class="keunggulan-list">
+          <li>Tampil lebih percaya diri & rapi saat bepergian</li>
+          <li>Menghemat waktu saat mencari barang</li>
+          <li>Anti tumpah, anti basah, perlindungan maksimal</li>
+          <li>Tidak mudah kusut & tetap stylish di segala suasana</li>
+          <li>Sangat cocok untuk hadiah!</li>
+        </ul>
+      </section>
+
+      <section class="testimoni-section">
+        <div class="section-title">Testimoni Pembeli</div>
+        <div class="testimoni-slider" id="testimoni-slider">
+          <!-- Testimoni cards (auto-generated by JS) -->
+        </div>
+      </section>
+
+      <section class="countdown-section">
+        <div class="countdown-timer" id="countdown-timer">
+          Penawaran berakhir dalam: <span id="countdown"></span>
+        </div>
+      </section>
+
+      <section class="price-section">
+        <div class="old-price">Rp 420.000</div>
+        <div class="price">Rp 280.000</div>
+        <a class="cta-btn" href="https://mila.orderonline.id/portable-cosmetic-bag" target="_blank" rel="noopener">BELI SEKARANG</a>
+      </section>
+    </div>
+  </div>
+
+  <!-- Social Proof Popups -->
+  <div class="social-proof-popup" id="social-proof-popup">
+    <img src="" alt="avatar" class="social-proof-avatar" id="social-proof-avatar">
+    <div class="social-proof-msg" id="social-proof-msg"></div>
+    <span class="social-proof-time" id="social-proof-time"></span>
+  </div>
+
+  <script>
+    // Testimoni Data (Indonesian, random avatars)
+    const testimoniData = [
+      {
+        nama: "bogel.",
+        kota: "Jakarta",
+        msg: "Produknya bagus dan elegan.",
+        avatar: "https://randomuser.me/api/portraits/men/42.jpg"
+      },
+      {
+        nama: "dian S.",
+        kota: "Surabaya",
+        msg: "Pengiriman cepat dan aman.",
+        avatar: "https://randomuser.me/api/portraits/women/65.jpg"
+      },
+      {
+        nama: "Lina Putri",
+        kota: "Bandung",
+        msg: "Suka banget, semua kosmetik jadi rapi & mudah dicari.",
+        avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+      },
+      {
+        nama: "Rizky Fadli",
+        kota: "Medan",
+        msg: "Tasnya premium banget, recommended!",
+        avatar: "https://randomuser.me/api/portraits/men/35.jpg"
+      },
+      {
+        nama: "Asih Nur",
+        kota: "Bekasi",
+        msg: "Cocok buat traveling, muat banyak barang.",
+        avatar: "https://randomuser.me/api/portraits/women/33.jpg"
+      },
+      {
+        nama: "Wawan",
+        kota: "Tangerang",
+        msg: "Kualitas bagus, harga sesuai.",
+        avatar: "https://randomuser.me/api/portraits/men/23.jpg"
+      },
+      {
+        nama: "Maya Sari",
+        kota: "Depok",
+        msg: "Beli buat hadiah, teman saya suka banget.",
+        avatar: "https://randomuser.me/api/portraits/women/59.jpg"
+      }
+    ];
+    // Render testimoni in slider
+    const slider = document.getElementById('testimoni-slider');
+    testimoniData.forEach(t => {
+      const div = document.createElement('div');
+      div.className = 'testimoni';
+      div.innerHTML = `
+        <div class="testimoni-profile">
+          <img src="${t.avatar}" alt="Foto profil ${t.nama}">
+          <span class="testimoni-name">${t.nama}</span>
+        </div>
+        <div class="testimoni-msg">"${t.msg}"</div>
+      `;
+      slider.appendChild(div);
+    });
+    // Auto-scroll slider
+    let scrollPos = 0;
+    setInterval(() => {
+      scrollPos += 260;
+      if (scrollPos > slider.scrollWidth - slider.clientWidth) {
+        scrollPos = 0;
+      }
+      slider.scrollTo({ left: scrollPos, behavior: 'smooth' });
+    }, 3500);
+
+    // Countdown Timer (set to 2 hours from first load)
+    function pad(n) { return n < 10 ? '0' + n : n; }
+    function startCountdown() {
+      const countdownElem = document.getElementById('countdown');
+      let end = Date.now() + (2 * 60 * 60 * 1000);
+      function update() {
+        let now = Date.now();
+        let diff = end - now;
+        if (diff < 0) diff = 0;
+        let h = Math.floor(diff / 1000 / 60 / 60);
+        let m = Math.floor((diff / 1000 / 60) % 60);
+        let s = Math.floor((diff / 1000) % 60);
+        countdownElem.textContent = `${pad(h)}:${pad(m)}:${pad(s)}`;
+        if (diff > 0) setTimeout(update, 1000);
+      }
+      update();
+    }
+    startCountdown();
+
+    // Social Proof System
+    const customerNames = [
+      "Asri Wulandari", "Dina Kartika", "Lestari Putri", "Maya Sari", "Rani Permata"
+    ];
+    const cities = [
+      "Jakarta", "Surabaya", "Bandung", "Medan", "Bekasi", "Tangerang", "Depok", "Semarang"
+    ];
+    const avatars = [
+      "https://randomuser.me/api/portraits/women/21.jpg",
+      "https://randomuser.me/api/portraits/women/52.jpg",
+      "https://randomuser.me/api/portraits/women/37.jpg",
+      "https://randomuser.me/api/portraits/women/29.jpg",
+      "https://randomuser.me/api/portraits/women/49.jpg"
+    ];
+    let socialProofIdx = 0;
+    function showSocialProof() {
+      const popup = document.getElementById('social-proof-popup');
+      const msg = document.getElementById('social-proof-msg');
+      const avatar = document.getElementById('social-proof-avatar');
+      const time = document.getElementById('social-proof-time');
+      const name = customerNames[socialProofIdx % customerNames.length];
+      const city = cities[Math.floor(Math.random() * cities.length)];
+      avatar.src = avatars[socialProofIdx % avatars.length];
+      msg.textContent = `${name} dari ${city} baru saja memesan Portable cosmetic bag`;
+      time.textContent = "Baru saja";
+      popup.classList.add("active");
+      setTimeout(() => {
+        popup.classList.remove("active");
+      }, 5000);
+      socialProofIdx++;
+    }
+    setTimeout(() => {
+      showSocialProof();
+      setInterval(showSocialProof, 8000);
+    }, 1200);
+
+  </script>
+</body>
+</html>
